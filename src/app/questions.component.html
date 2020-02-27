@@ -1,0 +1,20 @@
+   <!-- <mat-card>
+   <mat-card-content>
+     <mat-list *ngFor="let question in questions">
+       <mat-list-item class="clickLink" (click)="api.selectQuestion(question)">
+         {{question.text}}
+       </mat-list-item>
+     </mat-list>
+   </mat-card-content>
+   <mat-card-actions>
+    <button mat-icon-button (click)="null">
+      <button mat-icon-button (click)="null">
+   </mat-card-actions>
+ </mat-card>  -->
+
+
+ <mat-list *ngFor="let question of questions">
+  <mat-list-item class="clickLink" (click)="api.selectQuestion(question)">
+    {{question.text}}
+  </mat-list-item>
+ </mat-list>
